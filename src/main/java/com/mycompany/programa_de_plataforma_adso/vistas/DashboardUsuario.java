@@ -87,7 +87,8 @@ public class DashboardUsuario extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(pnl_lateral, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnl_contenedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(pnl_contenedor, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -106,14 +107,14 @@ public class DashboardUsuario extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_catalogoActionPerformed
 
     private void btn_cerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cerrarSesionActionPerformed
-        // 1. Preguntamos al usuario si realmente desea salir
+        //  Preguntamos al usuario si realmente desea salir
         int confirmacion = JOptionPane.showConfirmDialog(this,
                 "¿Está seguro que desea cerrar sesión?",
                 "Cerrar Sesión",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE);
 
-        // 2. Si responde que "Sí" (YES_OPTION)
+        // Si responde que "Sí" (YES_OPTION)
         if (confirmacion == JOptionPane.YES_OPTION) {
             
             // Cerramos la ventana actual del Dashboard

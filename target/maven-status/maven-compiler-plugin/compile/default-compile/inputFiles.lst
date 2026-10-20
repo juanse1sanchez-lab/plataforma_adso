@@ -1,13 +1,17 @@
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/Programa_de_plataforma_ADSO.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/config/Conexion.java
+/Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/CatalogoController.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/DashboardUsuarioController.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/InicioController.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/LoginController.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/PanelSolicitudesController.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/PanelUsuariosController.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/RegistroController.java
+/Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/controladores/VerPeliculasController.java
+/Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/dao/ContenidoDAO.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/dao/SolicitudDAO.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/dao/UsuarioDAO.java
+/Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/modelos/Contenido.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/modelos/Solicitud.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/modelos/Usuario.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/servicios/GeneradorCredenciales.java
@@ -15,6 +19,8 @@
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/DashboardUsuario.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/Inicio_Sesion.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/PanelCatalogo.java
+/Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/PanelGestionCatalogo.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/PanelSolicitudes.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/PanelUsuarios.java
+/Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/PanelVerPeliculas.java
 /Users/juans/NetBeansProjects/programa_de_plataforma_ADSO/src/main/java/com/mycompany/programa_de_plataforma_adso/vistas/Registrarse.java

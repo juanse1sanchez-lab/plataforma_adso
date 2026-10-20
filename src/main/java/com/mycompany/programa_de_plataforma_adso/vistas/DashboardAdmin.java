@@ -52,6 +52,7 @@ public class DashboardAdmin extends javax.swing.JFrame {
         btn_peliculas = new javax.swing.JButton();
         btn_cerrarsesion = new javax.swing.JButton();
         btn_solicitudes = new javax.swing.JButton();
+        btn_agregarContenido = new javax.swing.JButton();
         pnl_contenedor = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -79,6 +80,9 @@ public class DashboardAdmin extends javax.swing.JFrame {
         btn_solicitudes.setText("Solicitudes");
         btn_solicitudes.addActionListener(this::btn_solicitudesActionPerformed);
 
+        btn_agregarContenido.setText("Agregar Contenido");
+        btn_agregarContenido.addActionListener(this::btn_agregarContenidoActionPerformed);
+
         javax.swing.GroupLayout pnl_menulateralLayout = new javax.swing.GroupLayout(pnl_menulateral);
         pnl_menulateral.setLayout(pnl_menulateralLayout);
         pnl_menulateralLayout.setHorizontalGroup(
@@ -93,7 +97,8 @@ public class DashboardAdmin extends javax.swing.JFrame {
                     .addComponent(btn_usuarios)
                     .addComponent(btn_peliculas)
                     .addComponent(btn_cerrarsesion)
-                    .addComponent(btn_solicitudes))
+                    .addComponent(btn_solicitudes)
+                    .addComponent(btn_agregarContenido))
                 .addGap(0, 12, Short.MAX_VALUE))
         );
         pnl_menulateralLayout.setVerticalGroup(
@@ -109,7 +114,9 @@ public class DashboardAdmin extends javax.swing.JFrame {
                 .addComponent(btn_peliculas)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btn_solicitudes)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_agregarContenido)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 217, Short.MAX_VALUE)
                 .addComponent(btn_cerrarsesion)
                 .addGap(14, 14, 14))
         );
@@ -123,7 +130,7 @@ public class DashboardAdmin extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(pnl_menulateral, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnl_contenedor, javax.swing.GroupLayout.DEFAULT_SIZE, 272, Short.MAX_VALUE))
+                .addComponent(pnl_contenedor, javax.swing.GroupLayout.DEFAULT_SIZE, 492, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,7 +149,12 @@ public class DashboardAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_usuariosActionPerformed
 
     private void btn_peliculasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_peliculasActionPerformed
-        // TODO add your handling code here:
+        PanelVerPeliculas panelVer = new PanelVerPeliculas();
+        
+        pnl_contenedor.removeAll();
+        pnl_contenedor.add(panelVer, java.awt.BorderLayout.CENTER);
+        pnl_contenedor.revalidate();
+        pnl_contenedor.repaint();
     }//GEN-LAST:event_btn_peliculasActionPerformed
 
     private void btn_cerrarsesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cerrarsesionActionPerformed
@@ -171,7 +183,19 @@ public class DashboardAdmin extends javax.swing.JFrame {
         mostrarPanel(vistaSolicitudes);
     }//GEN-LAST:event_btn_solicitudesActionPerformed
 
+    private void btn_agregarContenidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agregarContenidoActionPerformed
+        PanelGestionCatalogo panelCatalogo = new PanelGestionCatalogo();
+        
+        // Lo inyectamos en el contenedor central de la ventana del Administrador
+        // (Asumiendo que tu contenedor del Admin se llama pnl_contenedor y usaste la misma lógica)
+        pnl_contenedor.removeAll();
+        pnl_contenedor.add(panelCatalogo, java.awt.BorderLayout.CENTER);
+        pnl_contenedor.revalidate();
+        pnl_contenedor.repaint();
+    }//GEN-LAST:event_btn_agregarContenidoActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_agregarContenido;
     private javax.swing.JButton btn_cerrarsesion;
     private javax.swing.JButton btn_inicio;
     private javax.swing.JButton btn_peliculas;

@@ -3,7 +3,6 @@ package com.mycompany.programa_de_plataforma_adso.controladores;
 import com.mycompany.programa_de_plataforma_adso.modelos.Usuario;
 import com.mycompany.programa_de_plataforma_adso.dao.UsuarioDAO;
 import com.mycompany.programa_de_plataforma_adso.servicios.GeneradorCredenciales;
-import com.mycompany.programa_de_plataforma_adso.vistas.DashboardAdmin;
 import com.mycompany.programa_de_plataforma_adso.vistas.Inicio_Sesion;
 import javax.swing.JOptionPane;
 

@@ -220,4 +220,37 @@ public class UsuarioDAO {
         }
         return false;
     }
+   
+   // Método para verificar si el documento ya está registrado
+    public boolean existeDocumento(String documento) {
+        Connection con = Conexion.conectar();
+        if (con == null) return false;
+        try {
+            String sql = "SELECT id FROM usuarios WHERE documento = ?";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, documento);
+            ResultSet rs = ps.executeQuery();
+            return rs.next(); // Retorna true si encontró al menos un registro
+        } catch (Exception e) {
+            System.out.println("Error al verificar documento: " + e.getMessage());
+        }
+        return false;
+    }
+
+    // Método para verificar si el correo ya está registrado
+    public boolean existeCorreo(String correo) {
+        Connection con = Conexion.conectar();
+        if (con == null) return false;
+        try {
+            String sql = "SELECT id FROM usuarios WHERE correo = ?";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, correo);
+            ResultSet rs = ps.executeQuery();
+            return rs.next(); // Retorna true si encontró al menos un registro
+        } catch (Exception e) {
+            System.out.println("Error al verificar correo: " + e.getMessage());
+        }
+        return false;
+    }
+   
 }

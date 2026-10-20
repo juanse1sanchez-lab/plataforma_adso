@@ -26,7 +26,8 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="pnl_lateral" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="pnl_contenedor" max="32767" attributes="0"/>
+              <Component id="pnl_contenedor" min="-2" pref="282" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
